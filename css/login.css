@@ -1,0 +1,359 @@
+
+/*头部*/
+.header{
+	height: auto;
+	z-index: 20;
+	position: relative;
+}
+
+.box-1{
+	line-height:40px;
+	height: 40px;
+	background: #0e0f11;
+	position: relative;
+	background: rgba(14, 15, 17, 0.9);
+}
+/*登陆注册*/
+.top-wrapper{
+	width: 1200px;
+	margin:0 auto;
+}
+
+.top-acon{
+	font-size: 12px;
+	color: #c9c9c9;
+}
+.top-acon-bd{
+	float: right;
+}
+.top-acon-bd li{
+	position: relative;
+	float: left;
+}
+.top-acon-bd li .s {
+	display: inline-block;
+	padding: 0 10px;
+	color: #c9c9c9;
+}
+.as{
+	color: #429605 !important;
+}
+.ls{
+	font-weight: 600;
+}
+
+/*导航*/
+
+.top-nav-new{
+	height: 100px;
+	z-index: 10;
+	background:rgba(18, 28, 39, 0.8);
+	box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.3);
+}
+.com-wrapper{
+	z-index: 10;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.new-nav{
+	position:relative;
+}
+.nav-new-logo{
+	float: left;
+	width:254px;
+	margin-top: 30px;
+}
+
+.clear{
+	font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+/*万能*/
+.clearfix:after{
+	content:" ";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+/*center*/
+.center{
+	padding: 1px 0 50px;
+	z-index: 1;
+	position: relative;
+	box-sizing: border-box;
+	height: 711px;
+}
+
+.loginCa{
+	position: absolute;
+	top: -140px;
+	bottom: 0;
+	width: 100%;
+	height: 850px;
+	background: url(../img/loginCa_bj.jpg) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+.loginCa>.loginCn{
+	position: relative;
+    top: 21%;
+    width: 1200px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.loginCn>.loginForm{
+	float: right;
+    width: 350px;
+    padding: 30px 40px;
+    border: 1px solid #0f3356;
+    background: #132435;
+    overflow: hidden;
+}
+
+/*form*/
+.loginTitle{
+	color: #0b84d3;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.formSingle{
+	margin-bottom: 15px;
+}
+.formSingle label{
+	line-height: 20px;
+	cursor: default;
+}
+.h-user{
+	height: 40px;
+    line-height: initial;
+    background-color: #132232;
+    /*border-color: #133354;*/
+    width: 100%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    border: 1px solid #0f3356;
+    background: 15px center no-repeat #151f2c;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+.nameIcon{
+	background: url(../img/nameIcon.png) no-repeat 15px center;
+}
+.parIcon{
+	background: url(../img/pwdIcon.png) no-repeat 15px center;
+}
+.formSingle label input{
+	vertical-align: middle;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+.form-login{
+	display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    background: #184c86;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: button;
+    color: #fff;
+}
+
+.reg{
+	color: #0b84d3;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.formSingle > p a {
+    color: #0b84d3;
+    margin-left: 5px;
+}
+
+.fl {
+    float: left !important;
+}
+.fr {
+    float: right !important;
+}
+.oauthTitle{
+	height: 20px;
+    text-align: center;
+    border-bottom: solid 1px #61666e;
+}
+.oauthList{
+	margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+    overflow: hidden;
+}
+.oauthList li{
+	display: inline-block;
+    width: 80px;
+    height: 69px;
+    margin: 0 1.075%;
+    overflow: hidden;
+}
+
+.temporarily {
+    color: #acacac;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.temporarily a{
+	color: #0b84d3;
+}
+/*footer*/
+.footer{
+	z-index: 99;
+    padding: 40px 0 30px;
+    background: #111922;
+}
+.mod-seoLinks-item {
+    float: left;
+    margin-left: 20px;
+}
+.mod-seoLinks-item.item-1, .mod-seoLinks-item.item-2 {
+    width: 18%;
+}
+
+.mod-seoLinks-item .h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.mod-seoLinks-item p {
+    line-height: 2;
+}
+.mod-seoLinks-item p a {
+    font-size: 12px;
+    display: block;
+    color: #9aafc9;
+}
+.mod-seoLinks-item.item-3 p {
+    overflow: hidden;
+}
+.mod-seoLinks-item.item-3 a {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    vertical-align: middle;
+}
+.mod-seoLinks-item.item-4 {
+    float: right;
+    width: 30%;
+    margin-left: 0;
+}
+
+.blogroll {
+    color: #304255;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+.blogroll > .link {
+    color: #304255;
+    display: inline-block;
+    margin: 5px 10px 5px 5px;
+}
+.mod-copyright {
+    line-height: 1.8;
+    overflow: hidden;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+
+/*sidebar*/
+.sidebar{
+	position: fixed;
+	bottom: 87px;
+	right: 35px;
+	z-index: 10;
+}
+
+.sidBox{
+	display: block;
+	width: 70px;
+	height: 70px;
+}
+.home{
+	display: none;
+	cursor: pointer;
+	background: url(../img/stickIcon.png) no-repeat center;
+}
+.home:hover{
+	background: url(../img/stickIconFocus.png) no-repeat center;
+}
+.App{
+	cursor: pointer;
+	background: url(../img/appDownloadIcon.png) no-repeat center;
+}
+.App:hover{
+	background: url(../img/appDownloadIconFocus.png) no-repeat center;
+}
+.contactUs{
+	cursor: pointer;
+	background: url(../img/contactIcon.png) no-repeat center;
+}
+.contactUs:hover{
+	background: url(../img/contactIconFocus.png) no-repeat center;
+}
+.novice{
+	cursor: pointer;
+	background: url(../img/noviceIcon.png) no-repeat center;
+}
+.novice:hover{
+	background: url(../img/noviceIconFocus.png) no-repeat center;
+}
+.verification{
+	cursor: pointer;
+	background: url(../img/verifyIcon.png) no-repeat center;
+}
+.verification:hover{
+	background: url(../img/verifyIconFocus.png) no-repeat center;
+}
+
+.help{
+	cursor: pointer;
+	background: url(../img/mediaQQ.png) no-repeat center;
+}
+.help:hover{
+	background: url(../img/mediaQQFocus.png) no-repeat center;
+}
+
+
+
+/*滚动条*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-corner {
+    background: #f1f3f9;
+}
+::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background: #a2a2a2;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+    background: #f1f3f9;
+}
