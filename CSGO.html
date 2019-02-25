@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>DOTA2饰品|CSGO饰品|绝地求生饰品|steam饰品交易|电竞饰品商城-IGXE中国电竞饰品交易平台</title>
+<title>IGXE-CSGO</title>
 <link rel="stylesheet" type="text/css" href="css/iconfont.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/CSGO.css">
 <style type="text/css">
 	body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
 	margin:0;
@@ -31,12 +32,13 @@ a{
 	text-decoration: none;
 	color:#fff;
 }
-
 </style>
 </head>
 <body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/cssTools.js" ></script>
-<script type="text/javascript" src="js/mover1810.js" ></script>
+<script type="text/javascript" src="js/mover2.js" ></script>
+<!-- header -->
 	<div class="header">
 		<div class="box-1">
 			<div class="top-wrapper">
@@ -50,17 +52,17 @@ a{
 								<a class="s" href="#" target="_blank">饰品出售</a>
 							</li>
 							<li>
-								<a class="s ls" href="reg.html" target="_blank">注册</a>
+								<a class="s ls" href="#" target="_blank">注册</a>
 							</li>
 							<li>
-								<a class="s ls" href="login.html" target="_blank">登陆</a>
+								<a class="s ls" href="#" target="_blank">登陆</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- 导航部分 -->
+	<!-- 导航部分 -->
 		<div class="top-nav-new">
 			<div class="com-wrapper">
 				<div class="new-nav">
@@ -163,18 +165,25 @@ a{
 								</ul>
 
 						<script type="text/javascript">
-							$("#search-m").onclick = function(){
-								$("#search-xl").style.display = "block"
-							}
-							var obj_lis =$("#search-xl").getElementsByTagName("li");
+							$("#search-m").click(function(){
+								$("#search-xl").css("display","block")
+							})
+							var obj_lis =$("#search-xl");
+							//.getElementsByTagName("li");
 						
-							for(var i=0;i<obj_lis.length;i++){
-								obj_lis[i].onclick = function(){
+							// for(var i=0;i<obj_lis.length;i++){
+							
+								obj_lis.on("click","li",function(){
 									//alert(this.innerHTML);
-									$("#search-m").innerHTML = this.innerHTML;
-									$("#search-xl").style.display = "none"
-								}
-							}
+									//obj_lis.each(function(){
+										//let index = $(this).index()+1
+										$("#search-m").html($(this).html());
+										$("#search-xl").css("display","none")
+									//})
+								})
+							
+								
+							//}
 						</script>
 							<div class="conSearch">
 								<input type="text" class="search-v">
@@ -190,7 +199,7 @@ a{
 					<!-- 导航 -->
 					<ul class="top-menu clearfix">
 						<li class="nav-item">
-							<a class="link" href="index.html">首页</a>
+							<a class="link" href="#">首页</a>
 						</li>
 						<li class="gameSele">
 							<div class="gsIcon">
@@ -200,80 +209,80 @@ a{
 								</div>
 								<ul class="gs-none clearfix">
 								    <li>
-								        <a class="gs-list" href="CSGO.html">
+								        <a class="gs-list" href="/csgo/730">
 								            <img class="gameIcon" src="img/730.png">
 								            <span class="gameName">CSGO 反恐精英：全球攻势</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/dota2/570">
 								            <img class="gameIcon" src="img/570.png">
 								            <span class="gameName">DOTA2 刀塔2</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/pubg/578080"0">
 								            <img class="gameIcon" src="img/578080.png">
 								            <span class="gameName">PUBG 绝地求生（吃鸡）</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/h1z1/433850pp-id="433850">
 								            <img class="gameIcon" src="img/433850.png">
 								            <span class="gameName">H1Z1-KOTK（生存王者）</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/nyne/72d="728540">
 								            <img class="gameIcon" src="img/728540.png">
 								            <span class="gameName">尼内岛：大逃杀</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">                                        <img class="gameIcon" src="img/440.png">
+								        <a class="gs-list" href="/tf2/440"                                        <img class="gameIcon" src="img/440.png">
 								            <span class="gameName">TF2 军团要塞2</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/pd2/218620"">
 								            <img class="gameIcon" src="img/218620.png">
 								            <span class="gameName">PD2 收获日2</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/unturned/304930"04930">
 								            <img class="gameIcon" src="img/304930.png">
 								            <span class="gameName">Unturned 未转变者</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/rust/252490"0">
 								            <img class="gameIcon" src="img/252490.png">
 								            <span class="gameName">Rust 腐蚀</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/dst/322330"">
 								            <img class="gameIcon" src="img/322330.png">
 								            <span class="gameName">DST 饥荒</span>
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/depth/274940"40">
 								            <img class="gameIcon" src="img/274940.png">
 								            <span class="gameName">Depth 深海惊魂</span>
 
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/kf2/232090"">
 								            <img class="gameIcon" src="img/232090.png">
 								            <span class="gameName">KF2 杀戮空间2</span>
 
 								        </a>
 								    </li>
 								    <li>
-								        <a class="gs-list" href="javascript:;">
+								        <a class="gs-list" href="/card">
 								            <img class="gameIcon" src="img/753.png">
 								            <span class="gameName">Steam</span>
 								        </a>
@@ -282,13 +291,13 @@ a{
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="link" href="javascript:;">CDKEY</a>
+							<a class="link" href="#">CDKEY</a>
 						</li>
 						<li class="nav-item">
-							<a class="link" href="javascript:;">饰品互换</a>
+							<a class="link" href="#">饰品互换</a>
 						</li>
 						<li class="nav-item">
-							<a class="link" href="javascript:;">steam咨询</a>
+							<a class="link" href="#">steam咨询</a>
 						</li>
 					</ul>
 				</div>
@@ -296,434 +305,147 @@ a{
 		</div>
 		<!-- <div class="g-nav-drop clearfix"></div> -->
 	</div>
+
+<!-- center -->
 	<div class="center">
-		<!-- 轮播 -->
-		<div class="box-2">
-			<div class="mod-banner">
-				<div id="box">
-					<div class="ban-box1 ban-bo"></div>
-					<div class="ban-box2 ban-bo" style="left: 1528px;"></div>
-					<div class="ban-box3 ban-bo" style="left: 3056px"></div>
-					<!-- <img src="img/bn1.jpg" style="">
-					<img src="img/bn2.jpg" style="left: 1528px;">
-					<img src="img/bn3.jpg" style="left: 3056px;"> -->
-					<ul id="doudouBox">
-						<li style="width: 30px;background:#0D70B2; "></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
-				<!-- 广告位 -->
-				<div class="adp">
-					<ul>
-						<li><a href="javascript:;" target="_blank">
-							<img src="img/q1.jpg"/>
-						</a></li>
-						<li><a href="javascript:;" target="_blank">
-							<img src="img/q2.jpg"/>
-						</a></li>
-						<li><a href="javascript:;" target="_blank">
-							<img src="img/q3.jpg"/>
-						</a></li>
-					</ul>
+		<div class="center">
+			<div class="bodybj">
+				
+			</div>
+			<div class="box3">;
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+							<img src="img/0e8ff605c79f4905a46badb19d1789f2.jpg" class="swiper-slide">
+							<img src="img/e8085182b9a242fa8f1f83a1f7ee14c3.jpg" class="swiper-slide">
+						</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
-			
-			<script type="text/javascript">
-				let myTimer = null;
-				let currIndex = 0;
-				var arr=["http://www.baidu.com","http://www.taobao.com","http://www.jd.cn"];
-
-				//自动播放
-				function autoPlay(){
-					if(myTimer!=null){
-						return;
-					}
-					myTimer = setInterval(function(){
-						//一、数据处理
-						let outIndex = currIndex;
-						currIndex=currIndex+1;
-
-						if(currIndex>=3){
-							currIndex=0;
-						}
-
-						//二、外观呈现
-						showImg(outIndex,currIndex);
-
-					},5000);
-
-				}
-				//停止播放	
-				function stopPlay(){
-					window.clearInterval(myTimer);
-					myTimer = null;
-				}
-
-				//跳转到对应的图片上
-				function goImg(index){
-					//一、数据处理
-					let outIndex = currIndex;
-					currIndex = index;
-
-					if(currIndex>=3 || currIndex<0){
-						currIndex=0;
-					}
-
-					//二、外观呈现
-					showImg(outIndex,currIndex);
-				}
-
-				//显示指定的图片
-				function showImg(outOrd,inOrd){
-					if(outOrd==inOrd){
-						return;
-					}
-					//1、改图片
-					//一个淡入，一个淡出
-					let imgDoms=$("#box").children;
-					imgDoms[inOrd].style.left= "1528px";
-					// moveYun02(imgDoms[outOrd],"left",-400,1000);
-					// moveYun02(imgDoms[inOrd],"left",0,1000);
-					slideInOut(imgDoms[outOrd],"left",-1528,800,imgDoms[inOrd],1528);
-
-					//2、改豆豆
-					let liDoms = $("#doudouBox").children;
-					for(var i=0;i<liDoms.length;i++){
-						liDoms[i].style.backgroundColor = "gray";
-						liDoms[i].style.width = "15px";
-					}
-					liDoms[inOrd].style.backgroundColor = "#0D70B2";
-					liDoms[inOrd].style.width = "30px";
-				}
-
-				window.onload = function(){
-					//1、自动播放
-					autoPlay();
-
-					//2、鼠标进入停止播放
-					// $("#box").onmouseover = function(){
-					// 	stopPlay();
-					// }
-
-					//3、鼠标离开继续播放
-					// $("#box").onmouseout = function(){
-					// 	autoPlay();
-					// }
-
-
-					let liDoms = $("#doudouBox").children;
-					for(var i=0;i<liDoms.length;i++){
-						liDoms[i].setAttribute("index",i);
-						//绑定了事件
-						liDoms[i].onclick = function(event){
-							let evt = event || window.event;
-							// console.log(i);
-							// goImg(i);//循环的时候，不会调用goImg();
-							goImg(this.getAttribute("index"));
-							evt.stopPropagation();
-						}
-					}
-
-					//5、超链
-					$("#box").onclick = function(){
-						location.href = arr[currIndex];
-					}
-
-				}
-
-				
-
-			</script>
-
-			
-			
-		</div>
-		<!-- 内容 -->
-		<div class="box-3" style="margin-top: 500px">
-			<div class="com-wrapper">
-		<!-- 热门饰品 -->
-				<div class="rm-wra">
-					<div class="hd clearfix h-img1">
-						<ul class="fl nv">
-							<li>
-								<img src="img/pi3.png" width="14" height="14">
-								CSGO
-							</li>
-							<li>
-								<img src="img/pi2.png" width="14" height="14">
-								DOTA2
-							</li>
-							<li>
-								<img src="img/pi4.png" width="14" height="14">
-								H1Z1
-							</li>
-						</ul>
-						<a href="csgo.html" class="fr more">进入市场 >></a>
-					</div>
-					<div class="bd">
-						<div class="clearfix">
-							<div class="bd-left">
-								<a class="bd-l"></a>
+			<div class="box4">
+				<div class="com-wrapper">
+					<!-- 价格筛选 -->
+					<div class="dataFilter">
+						<div class="filter1">
+							<div class="csgoFilter clearfix">
+								<div class="armsType">
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/armsAllIcon.png" class="icon">
+												所有
+											</a>
+										</div>
+									</div>
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/armsPistolIcon.png" class="icon">
+												手枪
+											</a>
+										</div>
+									</div>
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/armsShotIcon.png" class="icon">
+												重型武器
+											</a>
+										</div>
+									</div>
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/wc.png" class="icon">
+												微型冲锋枪
+											</a>
+										</div>
+									</div>
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/armsRifleIcon.png" class="icon">
+												步枪
+											</a>
+										</div>
+									</div>
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/armsDaggerIcon.png" class="icon">
+												匕首
+											</a>
+										</div>
+									</div>
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/armsGlovesIcon.png" class="icon">
+												手套
+											</a>
+										</div>
+									</div>
+									<div class="items">
+										<div class="type">
+											<a href="">
+												<img src="img/armsOtherIcon.png" class="icon">
+												其他
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="moreFilter">
+									<div class="items">
+										<div class="type">
+											<span class="name">筛选</span>
+											<img src="img/selectIcon.png" alt="" class="icon">
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="bd-right">
-								<ul>
-									<li>
-										<a href="#">
-											<div class="ico tac">
-												<img src="img/7d46f24f064dc11f07b29f2289e25efa.png">
-											</div>
-											<div class="tit omit" title="“头号特训”武器箱钥匙">“头号特训”武器箱钥匙</div>
-											<div class="prc tac">
-												<sup>￥</sup>
-												<span>13.</span>
-												<sub>10</sub>
-											</div>
-										</a>
-									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
+						</div>
+						<div class="filter2">
+							<div class="widget-filter">
+								<label for="" class="single com-checkbox">
+									<input type="checkbox" name="">
+									<span></span>
+									只显示求购
+								</label>
+								<a href="javascript:;" class="sort">
+									价格
+								</a>
+								<input type="text" class="com-text" placeholder="￥"
+								value>
+								<input type="text" class="com-text" placeholder="￥" value>
+								<input type="submit" class="com-btn is-h35" value="确认">
 							</div>
 						</div>
 					</div>
-				</div>
-		<!-- 最新上架 -->
-				<div class="rm-wra">
-					<div class="hd clearfix h-img2">
-						<ul class="fl nv">
-							<li>
-								<img src="img/pi3.png" width="14" height="14">
-								CSGO
-							</li>
-							<li>
-								<img src="img/pi2.png" width="14" height="14">
-								DOTA2
-							</li>
-							<li>
-								<img src="img/pi4.png" width="14" height="14">
-								H1Z1
-							</li>
-						</ul>
-						<a href="#" class="fr more">进入市场 >></a>
-					</div>
-					<div class="bd">
-						<div class="clearfix">
-							<div class="bd-left">
-								<a class="bd-l"></a>
+					<!-- 显示数据 -->
+					<div class="dataList clearfix" id="dataFilter">
+						<a href="javascript:;" class="single csgo">
+							<div class="img">
+								<img src="img/9203e9449b1950ad4625e0d0a0574230.png" alt="">
 							</div>
-							<div class="bd-right">
-								<ul>
-									<li>
-										<a href="#">
-											<div class="ico tac">
-												<img src="img/7d46f24f064dc11f07b29f2289e25efa.png">
-											</div>
-											<div class="tit omit" title="“头号特训”武器箱钥匙">“头号特训”武器箱钥匙</div>
-											<div class="prc tac">
-												<sup>￥</sup>
-												<span>13.</span>
-												<sub>10</sub>
-											</div>
-										</a>
-									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
+							<div class="name" title="“头号特训”武器箱">“头号特训”武器箱</div>
+							<div class="inf clearfix">
+								<div class="price fl">
+									<sup>￥</sup>
+									<span>2.</span>
+									<sub>90</sub>
+								</div>
+								<div class="sum fr">
+								在售：872
+								</div>	
 							</div>
-						</div>
-					</div>
-				</div>
-		<!-- 求购区 -->
-				<div class="rm-wra">
-					<div class="hd clearfix h-img3">
-						<ul class="fl nv">
-							<li>
-								<img src="img/pi3.png" width="14" height="14">
-								CSGO
-							</li>
-							<li>
-								<img src="img/pi2.png" width="14" height="14">
-								DOTA2
-							</li>
-							<li>
-								<img src="img/pi4.png" width="14" height="14">
-								H1Z1
-							</li>
-						</ul>
-						<a href="#" class="fr more">进入市场 >></a>
-					</div>
-					<div class="bd">
-						<div class="clearfix">
-							<div class="bd-left">
-								<a class="bd-l"></a>
-							</div>
-							<div class="bd-right">
-								<ul>
-									<li>
-										<a href="#">
-											<div class="ico tac">
-												<img src="img/7d46f24f064dc11f07b29f2289e25efa.png">
-											</div>
-											<div class="tit omit" title="“头号特训”武器箱钥匙">“头号特训”武器箱钥匙</div>
-											<div class="prc tac">
-												<sup>￥</sup>
-												<span>13.</span>
-												<sub>10</sub>
-											</div>
-										</a>
-									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-		<!-- 土豪区 -->
-				<div class="rm-wra">
-					<div class="hd clearfix h-img4">
-						<ul class="fl nv">
-							<li>
-								<img src="img/pi3.png" width="14" height="14">
-								CSGO
-							</li>
-							<li>
-								<img src="img/pi2.png" width="14" height="14">
-								DOTA2
-							</li>
-							<li>
-								<img src="img/pi4.png" width="14" height="14">
-								H1Z1
-							</li>
-						</ul>
-						<a href="#" class="fr more">进入市场 >></a>
-					</div>
-					<div class="bd">
-						<div class="clearfix">
-							<div class="bd-left">
-								<a class="bd-l"></a>
-							</div>
-							<div class="bd-right">
-								<ul>
-									<li>
-										<a href="#">
-											<div class="ico tac">
-												<img src="img/7d46f24f064dc11f07b29f2289e25efa.png">
-											</div>
-											<div class="tit omit" title="“头号特训”武器箱钥匙">“头号特训”武器箱钥匙</div>
-											<div class="prc tac">
-												<sup>￥</sup>
-												<span>13.</span>
-												<sub>10</sub>
-											</div>
-										</a>
-									</li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-									<li></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-		<!-- 合作伙伴 -->
-				<div class="cen-parters">
-					<div class="par-cont">
-						<div class="par-wrapper" id="par-wr">
-							<div class="par-box pb1">
-								<a href="javascript:;" class="par-img" target="_blank">
-									<img src="img/par1.
-									png">
-								</a>
-							</div>
-							<div class="par-box">
-								<a href="javascript:;" class="par-img" target="_blank">
-									<img src="img/par1.png">
-								</a>
-							</div>
-							<div class="par-box">
-								<a href="javascript:;" class="par-img" target="_blank">
-									<img src="img/par1.png">
-								</a>
-							</div>
-							<div class="par-box">
-								<a href="javascript:;" class="par-img" target="_blank">
-									<img src="img/par1.png">
-								</a>
-							</div>
-							<div class="par-box">
-								<a href="javascript:;" class="par-img" target="_blank">
-									<img src="img/par1.png">
-								</a>
-							</div>
-							<div class="par-box">
-								<a href="javascript:;" class="par-img" target="_blank">
-									<img src="img/par1.png">
-								</a>
-							</div>
-							<div class="par-box">
-								<a href="javascript:;" class="par-img" target="_blank">
-									<img src="img/par1.png">
-								</a>
-							</div>
-						</div>
+						</a>
 						
 					</div>
-					<a href="javascript:;" class="iconfont icon-xiangyou icon" id="par-left"></a>
-					<a href="javascript:;" class="iconfont icon-left icon" id="par-right"></a>
 				</div>
-				<script type="text/javascript">
-					var lf = $("#par-left")
-					var rg = $("#par-right")
-					var lfs = 1;
-					var rgs = 1;
-						lf.onclick = function(){
-							let imgDoms=$("#par-wr").children;
-							console.log(imgDoms.length)
-							if((imgDoms.length)>lfs){
-								let pl = -200*lfs;
-								$("#par-wr").style.left=pl+"px";
-								lfs++;
-								rgs--
-								// console.log("l"+lfs);
-								// console.log("r"+rgs);
-							}
-						}
-						rg.onclick=function(){
-							if($("#par-wr").offsetLeft<0){
-								let pl = 200*rgs;
-								$("#par-wr").style.left=pl+"px";
-								rgs++;
-								lfs--
-								console.log("l"+lfs);
-								console.log("r"+rgs);
-							}
-						}
-				</script>
-		<!-- 合作伙伴END -->
 			</div>
 		</div>
 	</div>
+
+<!-- footer -->
 	<div class="footer">
 		<div class="com-wrapper">
 		    <!-- mod-seoLinks -->
@@ -850,15 +572,15 @@ a{
 	</div>
 
 	<!-- 回到顶部 -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		window.onscroll = function(){
 			var up = document.getElementById("top");
 			//当前页面滚动的距离？？
 			var _top = document.body.scrollTop || document.documentElement.scrollTop;
 			if(_top >= 700){
-				$("#home").style.display = "block";
+				$("#home").css("display","block")
 			} else {
-				$("#home").style.display = "none";
+				$("#home").css("display","none")
 			}
 			$("#home").onclick = function(){
 				var mt = _top;
@@ -875,6 +597,93 @@ a{
 			}
 			
 		}
-	</script>
+	</script> -->
 </body>
 </html>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">      
+$(function (){
+ 
+	var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    speed:3000,
+    autoplay:{
+    	delay:3000
+    },
+	    pagination :{
+	    el:'.swiper-pagination',
+	    type:'bullets',
+	    clickable :true,
+	  //   renderBullet: function (index,className) {
+	  //   	switch(index){
+			// 	case 0:text='一';break;
+			// 	case 1:text='二';break;
+			// 	case 2:text='三';break;
+			// 	case 3:text='四';break;
+			// }
+
+			// return '<span class="' + className + '">'+text +'</span>';
+			// }
+		}
+
+    // 如果需要分页器
+     // pagination: {
+    	
+   //  	type:'custom',
+   //  	clickable :true,
+ //    paginationCustomRender: function(swiper, current, total) {
+	// 	var customPaginationHtml = "";
+	// 	for(var i = 0; i < total; i++) {
+	// 		//判断哪个分页器此刻应该被激活
+	// 		if(i == (current - 1)) {
+	// 			customPaginationHtml += '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
+	// 		} else {
+	// 			customPaginationHtml += '<span class="swiper-pagination-customs"></span>';
+	// 		}
+	// 	}
+	// 	return customPaginationHtml;
+	// }
+    }
+
+  ) 
+
+ function showList(objs){
+		let htmlStr="";
+		for(let i in objs){
+			htmlStr+=`
+						<a href="Commoditydetails.html?goodsId=${objs[i].goodsId}"" class="single csgo">
+						<div class="img">
+								<img src="${objs[i].goodsImg}" alt="">
+								</div>
+							<div class="name" title="${objs[i].goodsName}">${objs[i].goodsName}</div>
+							<div class="inf clearfix">
+								<div class="price fl">
+									<sup>￥</sup>
+									<span>${objs[i].goodsPrice}.</span>
+									<sub>00</sub>
+								</div>
+								<div class="sum fr">
+									在售：${objs[i].goodsCount};
+								</div>	
+							</div>
+					</a>`;
+			
+		}
+		$("#dataFilter").append(htmlStr);//.listview('refresh')
+		//$("#dataFilter").listview("refresh");
+		//$("#dataFilter").trigger("create");
+		//$.parser.parse($("#dataFilter"));
+	}
+
+	$.get("php/getGoodsList.php",showList,"json");
+	
+	//$("#dataFilter").trigger("create");
+	
+	//$("#dataFilter").parser.parser("#dataFilter");
+	
+
+})
+
+</script>

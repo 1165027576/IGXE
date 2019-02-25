@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IGXE-CSGO</title>
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/Commodity details.css">
+<style type="text/css">
+	body,p,dl,dd,ul,ol,li,div,h1,h2,h3,h4,h5,h6,form,input,table,tr,td{
+	margin:0;
+	padding:0;
+}
+html{
+	font-family: sans-serif;
+	line-height: 1.15;
+}
+body{
+	font:14px/1.5 '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', Arial, Helvetica, 'Helvetica Neue', Tahoma, sans-serif;
+	overflow-x:hidden;  
+	min-width: 1200px;
+	background: #121c27;
+	color:#fff;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/cssTools.js" ></script>
+<script type="text/javascript" src="js/mover2.js" ></script>
+<!-- header -->
+	<div class="header">
+		<div class="box-1">
+			<div class="top-wrapper">
+				<div class="top-acon">
+					<div class="top-acon-bd">
+						<ul>
+							<li>
+								<a class="s as" href="#" target="_blank">卖家助手下载</a>
+							</li>
+							<li>
+								<a class="s" href="#" target="_blank">饰品出售</a>
+							</li>
+							<li>
+								<a class="s ls" href="#" target="_blank">注册</a>
+							</li>
+							<li>
+								<a class="s ls" href="#" target="_blank">登陆</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- 导航部分 -->
+		<div class="top-nav-new">
+			<div class="com-wrapper">
+				<div class="new-nav">
+					<!-- logo -->
+					<div class="nav-new-logo">
+						<a href="#">
+							<img src="img/img-logo-csgo-07.png">
+						</a>
+					</div>
+					<!-- 搜索栏 -->
+					<div style="float: right;position: relative;">
+						<!-- 搜索 -->
+						<div class="nav-new-search">
+							<span class="search-m" id="search-m">
+								<img src="img/730.png">
+								<span class="sm-sz">CS:GO</span>
+								
+							</span>
+							<span class="iconfont icon-icon--"></span>
+							<ul class="search-xl clearfix" id="search-xl">
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/730.png">
+								            <span class="gameName">CSGO</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/570.png">
+								            <span class="gameName">DOTA2</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/578080.png">
+								            <span class="gameName">PUBG</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/433850.png">
+								            <span class="gameName">H1Z1-KOTK</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/728540.png">
+								            <span class="gameName">尼内岛：大逃杀</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">                                        <img class="gameIcon" src="img/440.png">
+								            <span class="gameName">TF2</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/218620.png">
+								            <span class="gameName">PD2</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/304930.png">
+								            <span class="gameName">Unturned</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/252490.png">
+								            <span class="gameName">Rust</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/322330.png">
+								            <span class="gameName">DST</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/274940.png">
+								            <span class="gameName">Depth</span>
+
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/232090.png">
+								            <span class="gameName">KF2</span>
+
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/753.png">
+								            <span class="gameName">Steam</span>
+								        </a>
+								    </li>
+								</ul>
+
+						<script type="text/javascript">
+							$("#search-m").click(function(){
+								$("#search-xl").css("display","block")
+							})
+							var obj_lis =$("#search-xl");
+							//.getElementsByTagName("li");
+						
+							// for(var i=0;i<obj_lis.length;i++){
+							
+								obj_lis.on("click","li",function(){
+									//alert(this.innerHTML);
+									//obj_lis.each(function(){
+										//let index = $(this).index()+1
+										$("#search-m").html($(this).html());
+										$("#search-xl").css("display","none")
+									//})
+								})
+							
+								
+							//}
+						</script>
+							<div class="conSearch">
+								<input type="text" class="search-v">
+							</div>
+							<a href="javascript:;" class="iconfont icon-search"></a>
+						</div>
+						<!-- 广告 -->
+						<a class="nav-advert" href="#">
+							<img src="img/media4_1.png">
+						</a>
+					</div>
+					<div class="clear"></div>
+					<!-- 导航 -->
+					<ul class="top-menu clearfix">
+						<li class="nav-item">
+							<a class="link" href="index.html">首页</a>
+						</li>
+						<li class="gameSele">
+							<div class="gsIcon">
+								<div class="gc">
+									<img src="img/gameSelectBtn.png">
+									<a href="#">游戏类目</a>
+								</div>
+								<ul class="gs-none clearfix">
+								    <li>
+								        <a class="gs-list" href="#">
+								            <img class="gameIcon" src="img/730.png">
+								            <span class="gameName">CSGO 反恐精英：全球攻势</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/570.png">
+								            <span class="gameName">DOTA2 刀塔2</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/578080.png">
+								            <span class="gameName">PUBG 绝地求生（吃鸡）</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/433850.png">
+								            <span class="gameName">H1Z1-KOTK（生存王者）</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/728540.png">
+								            <span class="gameName">尼内岛：大逃杀</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">                                        <img class="gameIcon" src="img/440.png">
+								            <span class="gameName">TF2 军团要塞2</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/218620.png">
+								            <span class="gameName">PD2 收获日2</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/304930.png">
+								            <span class="gameName">Unturned 未转变者</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/252490.png">
+								            <span class="gameName">Rust 腐蚀</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/322330.png">
+								            <span class="gameName">DST 饥荒</span>
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/274940.png">
+								            <span class="gameName">Depth 深海惊魂</span>
+
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/232090.png">
+								            <span class="gameName">KF2 杀戮空间2</span>
+
+								        </a>
+								    </li>
+								    <li>
+								        <a class="gs-list" href="javascript:;">
+								            <img class="gameIcon" src="img/753.png">
+								            <span class="gameName">Steam</span>
+								        </a>
+								    </li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="link" href="#">CDKEY</a>
+						</li>
+						<li class="nav-item">
+							<a class="link" href="#">饰品互换</a>
+						</li>
+						<li class="nav-item">
+							<a class="link" href="#">steam咨询</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="g-nav-drop clearfix"></div> -->
+	</div>
+
+<!-- center -->
+	<div id="center">
+		<div class="com-wrapper">
+			<div class="mod-navigation">
+				<a href="index.html">首页</a>
+				&gt;
+				<a href="csgo.html">
+					<span >CS:GO反恐精英：全球攻势</span>
+				</a>
+				&gt;
+				<span id="tigame"><!-- M4A4（StatTrak™） | 咆哮 (破损不堪) --></span>
+			</div>
+			<div class="productDetailsCn clearfix">
+				<div class="leftItems" style="overflow: visible;">
+					<div class="productInfo csgoInfo" style="height: 340px;">
+						<!-- 收藏 -->
+						<a href="javascript:;" class="collectbok collectbokplace" ;>
+							<div class="collect-not">
+								收藏
+								<em style="background-image: url(&quot;img/ico-collect.png&quot;);"></em>
+							</div>
+							<div class="collect-fulfil"></div>
+						</a>
+						<div class="img" id="oimg">
+							<!-- <img src="img/4dc4c50df0a58b4c8b38c5825f5c78fb.png" alt=""> -->
+						</div>
+						<div class="txt">
+							<div class="name" style="height: 20px;">
+								<!-- M4A4（StatTrak™） | 咆哮 (破损不堪) -->
+							</div>
+							<div class="rarity mt-30"><span style="color: orange;">违禁</span>
+							</div>
+							<div class="rarity mt-15">
+								<a href="">崭新出厂</a> 
+								<a href="">略有磨损</a> 
+								<a href="">久经沙场</a> 
+								<a href="javascript:;" class="active">破损不堪</a>
+							</div>
+							<div class="proposedPrice mt-15">
+								<span>Steam参考价</span>：
+								<span class="c-4"><!-- ￥12841.38 --></span>
+							</div>
+							<div class="averagePrice mt-15"><span style="width: 84px; display: inline-block; text-align: justify; letter-spacing: 55px;">起价</span>：
+								<span class="c-4"><!-- ￥23333.00 --></span>
+							</div>
+							<div class="stock mt-15">
+								<span>当前在售</span><!-- 1件 -->
+							</div>
+							<div class="bnts mt-10">
+								<input type="button" value="批量购买" class="com-btn com-green">
+							</div>
+						</div>
+					</div>
+					<div class="relatedInfo">
+						<div class="tabBtn clearfix">
+							<div class="single"><a href="" style="color: rgb(11, 132, 211);">正在销售</a></div>
+							<div class="single"><a href="" style="">求购(0)</a></div>
+							<div class="single"><a href="" style="">销售历史</a></div>
+							<div class="single"><a href="" style="">价格曲线</a></div>
+						</div>
+						<div class="tabCn">
+							<div class="single">
+								<div class="csgoInfo">
+									<div class="filter clearfix">
+										<div class="group fl">
+											<div class="com-btn is-h35 J_option isFocus">
+	                                            查看全部
+	                                        </div> 
+	                                        <div class="com-btn is-h35 J_option">
+	                                            查看可立即取回
+	                                        </div>
+	                                    </div>
+	                                    <div class="group fr">
+	                                    	<label id="js-search-sticker" class="three-checkbox fl" style="margin-top: 8px;">
+	                                    		<i class="state"></i>印花
+	                                    	</label> 
+	                                    	<span class="steam-database--select">
+	                                    	<!-- <select class="com-select_1 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+	                                    			<option value="0">
+	                                    				发货方式
+	                                    			</option> 
+	                                    			<option value="1">
+	                                    				极速发货
+	                                    			</option> 
+	                                    			<option value="2">
+	                                    			人工发货
+	                                    			</option>
+	                                    	</select> -->
+	                                    	<span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 78px;">
+	                                    		<span class="selection">
+	                                    				<span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-4mrn-container">
+	                                    					<span class="select2-selection__rendered" id="select2-4mrn-container" title="发货方式">
+	                                    					发货方式
+	                                    				</span>
+	                                    				<span class="select2-selection__arrow" role="presentation">
+	                                    					<b role="presentation">
+	                                    						
+	                                    					</b>
+	                                    				</span>
+	                                    			</span>
+	                                    		</span>
+	                                    		<span class="dropdown-wrapper" aria-hidden="true">
+	                                    			
+	                                    		</span>
+	                                    	</span>
+	                                    </span> 
+	                                    <span class="steam-database--select" style="position: relative;">
+	                                    	<img src="img/sortLabel.gif" style="position: absolute; top: -29px; left: 50%;">
+	                                    	 <select class="com-select_2 select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+	                                    	 	<option value="0">
+	                                    	 	默认排序
+	                                    	 </option> 
+	                                    	 <option value="1">
+	                                    	 价格升序
+	                                    	</option> 
+	                                    	<option value="2">
+	                                    	价格降序
+	                                    </option> 
+	                                    <option value="3">
+	                                    磨损升序
+			                            </option> 
+			                            <option value="4">
+			                            磨损降序
+				                        </option>
+					                    </select>
+					                    <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 78px;">
+					                    	<span class="selection">
+					                    		<span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-n6k3-container">
+					                    			<span class="select2-selection__rendered" id="select2-n6k3-container" title="默认排序">
+					                    			默认排序
+					                    		</span>
+					                    		<span class="select2-selection__arrow" role="presentation">
+					                    			<b role="presentation"></b>
+					                    		</span>
+					                    	</span>
+					                    </span>
+					                    <span class="dropdown-wrapper" aria-hidden="true">
+					                    	
+					                    </span>
+								                </span>
+								            </span>
+								        </div>
+									</div>
+									<!-- 货品 -->
+									<table class="dataTable is-show sell-data" id="huopin">
+										<!-- <tr>
+											<td>
+												<div title="人工发货" class="personIcon"></div>
+												<div class="img lm r card-tooltip tooltipstered" style="position: relative; overflow: visible;">
+													<a href="/product-163528549" class="weapon-product-a">
+														<img src="img/eaf8d0154215b2f6c23919b08624b845.png" alt="M4A4（StatTrak™） | 咆哮 (破损不堪)">
+													</a>
+												</div>
+												<div class="description">
+													绝版暗金倒数第一
+	                                            </div>
+											</td>
+											<td>
+												<div class="mainInfo">
+													<div class="printing">
+														<img src="img/navi_holo.e523764fe81d4acf87952bfbd87a8ec30321c531.png" alt=" Natus Vincere（全息）| 2016年科隆锦标赛" title=" Natus Vincere（全息）| 2016年科隆锦标赛">
+													</div>
+													<div class="worn">
+														<div class="bar" title="0.39754128456115722656">
+															<div class="val" style="left:39.7541%;"></div>
+														</div>
+													</div>
+													<a href="javascript:;" target="_blank" class="glook">游戏中检视</a>
+												</div>
+												<div class="numberbok c-4">
+														<div title="0.39754128456115722656" class="number">0.39754
+														</div>
+												</div>
+											</td>
+											<td>
+												<div class="mt-15 tal" style="padding-left: 30px;"><div class="dib vam vvm"><span title="可立即取回" class="c-4 txt">取</span></div></div>
+											</td>
+											<td>
+												<div class="timeclass mt-5">
+													<em class="timeclass_ing"></em>
+												</div>
+											</td>
+											<td></td>
+											<td>
+												<span class="dib price c-4 mt-10">
+													￥23333.00
+												</span>
+											</td>
+											<td>
+												<a href="javascript:;" class="com-btn com-green is-h30 mt-5 js-add-cart-parent">加入购物车</a>
+											</td>
+										</tr> -->
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+	//获取url中的参数
+$(function(){
+    function getUrlParam(name){
+        //构造一个含有目标参数的正则表达式对象
+        var reg = new RegExp("(^|&)"+name+"=([^&]*)(&|$)");
+        //匹配目标函数
+        var r = window.location.search.substr(1).match(reg);
+        // 返回参数
+        if(r!=null) return unescape(r[2]);
+        return null;
+    }
+
+    //接收URL中的参数goodsId
+    var id = getUrlParam('goodsId');
+    var jsonN="";
+    var goodsName ="";
+    console.log(id);
+    $.ajax({
+    	"type":"get",
+    	"url":"php/getGoodsInfo.php",
+    	"dataType":"json",
+    	"data":{
+    		"goodsId":id
+    	},
+    	success:function(objs){
+    		//console.log(objs);
+    		let htmlStr="";
+			htmlStr+=`<img src="${objs.goodsImg}" alt="">`;
+			$("#oimg").append(htmlStr)
+			$(".name").append(`${objs.goodsType}${objs.beiyong3} &brvbar; ${objs.goodsName}${objs.beiyong4}`);
+			$("#tigame").append(`${objs.goodsType}${objs.beiyong3} &brvbar; ${objs.goodsName}${objs.beiyong4}`);
+			$(".proposedPrice .c-4,.averagePrice .c-4").append(`￥${objs.goodsPrice}`)
+			$(".stock span").after(`：${objs.goodsCount}`)
+			// goodsName = objs.goodsName
+			/**/
+			
+    	},
+    	
+    })
+
+   	$.ajax({
+    	"type":"get",
+    	"url":"php/getGoodsInfo.php",
+    	"dataType":"json",
+    	"data":{
+    		"goodsId":id
+    	},
+    	success:function(objs){
+    		console.log(objs);
+    		let htmlStr="";
+			// htmlStr+=`<img src="${objs.goodsImg}" alt="">`;
+			// $("#oimg").append(htmlStr)
+			// $(".name").append(`${objs.goodsType}${objs.beiyong3} &brvbar; ${objs.goodsName}${objs.beiyong4}`);
+			// $(".proposedPrice .c-4,.averagePrice .c-4").append(`￥${objs.goodsPrice}`)
+			// $(".stock span").after(`：${objs.goodsCount}`)
+			let goodsNames=objs.goodsName
+			/**/
+			//for(let i in objs){};
+			htmlStr += `<tr>
+							<td>
+								<div title="人工发货" class="personIcon"></div>
+								<div class="img lm r card-tooltip tooltipstered" style="position: relative; overflow: visible;">
+									<a href="javascript:;" class="weapon-product-a">
+										<img src="${objs.goodsImg}" alt="${objs.goodsName}">
+									</a>
+								</div>
+								<div class="description">
+									${objs.goodsDesc}
+						        </div>
+							</td>
+							<td>
+								<div class="mainInfo">
+									<div class="printing">
+										<img src="img/navi_holo.e523764fe81d4acf87952bfbd87a8ec30321c531.png" alt=" Natus Vincere（全息）| 2016年科隆锦标赛" title=" Natus Vincere（全息）| 2016年科隆锦标赛">
+									</div>
+									<div class="worn">
+										<div class="bar" title="${objs.beiyong2}">
+											<div class="val" style="left:${objs.beiyong2}%;"></div>
+										</div>
+									</div>
+									<a href="javascript:;" target="_blank" class="glook">游戏中检视</a>
+								</div>
+								<div class="numberbok c-4">
+										<div title="${objs.beiyong2}" class="number">${objs.beiyong2}
+										</div>
+								</div>
+							</td>
+							<td>
+								<div class="mt-15 tal" style="padding-left: 30px;"><div class="dib vam vvm"><span title="可立即取回" class="c-4 txt">取</span></div></div>
+							</td>
+							<td>
+								<div class="timeclass mt-5">
+									<em class="timeclass_ing"></em>
+								</div>
+							</td>
+							<td></td>
+							<td>
+								<span class="dib price c-4 mt-10">
+									￥${objs.goodsPrice}
+								</span>
+							</td>
+							<td>
+								<a href="javascript:;" class="com-btn com-green is-h30 mt-5 js-add-cart-parent">加入购物车</a>
+								<div style="display:none;"></div>
+							</td>
+					</tr>`
+
+					$("#huopin").append(htmlStr);
+    	},
+    	
+    })
+  //  	$(".js-add-cart-parent").click(function(){
+  //  		$.ajax({
+		// 	"type":"POST",
+		// 	"url":"php/addShoppingCart.php",
+		// 	"data":{"vipName":$(".name").html(),
+		// 			"goodsId":id,
+		// 			"goodsCount":1
+		// 		},
+		// 	success: function (data) { //返回json结果
+  //       			alert(data);}
+		// })
+  //  	})
+ 
+})
+</script>

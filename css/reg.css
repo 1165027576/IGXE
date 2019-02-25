@@ -1,0 +1,352 @@
+*头部*/
+.header{
+	height: auto;
+	z-index: 20;
+	position: relative;
+}
+
+.box-1{
+	line-height:40px;
+	height: 40px;
+	background: #0e0f11;
+	position: relative;
+	background: rgba(14, 15, 17, 0.9);
+}
+/*登陆注册*/
+.top-wrapper{
+	width: 1200px;
+	margin:0 auto;
+}
+
+.top-acon{
+	font-size: 12px;
+	color: #c9c9c9;
+}
+.top-acon-bd{
+	float: right;
+}
+.top-acon-bd li{
+	position: relative;
+	float: left;
+}
+.top-acon-bd li .s {
+	display: inline-block;
+	padding: 0 10px;
+	color: #c9c9c9;
+}
+.as{
+	color: #429605 !important;
+}
+.ls{
+	font-weight: 600;
+}
+
+/*导航*/
+
+.top-nav-new{
+	height: 100px;
+	z-index: 10;
+	background:rgba(18, 28, 39, 0.8);
+	box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.3);
+}
+.com-wrapper{
+	z-index: 10;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.new-nav{
+	position:relative;
+}
+.nav-new-logo{
+	float: left;
+	width:254px;
+	margin-top: 30px;
+}
+
+.clear{
+	font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+/*万能*/
+.clearfix:after{
+	content:" ";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+
+
+/*center*/
+.center{
+	z-index: 10;
+	padding: 1px 0 50px;
+	position: relative;
+}
+
+.com-wrapper {
+    z-index: 100;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.registerStepCa {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 50px;
+    border-bottom: solid 1px #212b44;
+}
+.registerFormCa {
+    margin-top: 60px;
+}
+
+.registerFormCa form{
+	display: block;
+    margin-top: 0em;
+}
+
+.registerForm{
+	width: 355px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+
+.formSingle {
+    margin-bottom: 15px;
+}
+.formSingle > .yuerhuan {
+    color: #0b84d3;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.yuerhuan {
+    color: #acacac !important;
+}
+.formSingle > p a {
+    color: #0b84d3;
+    margin-left: 5px;
+}
+
+.h-user{
+	height: 40px;
+    line-height: initial;
+    background-color: #132232;
+    /*border-color: #133354;*/
+    width: 100%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    border: 1px solid #0f3356;
+    background: 15px center no-repeat #151f2c;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+.nameIcon{
+	background: url(../img/nameIcon.png) no-repeat 15px center;
+}
+.parIcon{
+	background: url(../img/pwdIcon.png) no-repeat 15px center;
+}
+
+
+.formSingle > .hint {
+    margin-top: 10px;
+    color: #acacac;
+    font-size: 12px;
+}
+
+.smsCode {
+    width: 229px !important;
+    margin-right: 10px;
+    padding-left: 19px !important;
+}
+
+
+
+
+.com-btn {
+    line-height: 40px;
+    box-sizing: border-box;
+    width: auto;
+    height: 40px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 0;
+    background: #184c86;
+}
+.com-green {
+    background-color: #429605;
+}
+.com-btn, .com-share, .com-share .icon {
+    display: inline-block;
+    color: #fff;
+}
+.smsCodetab {
+    width: 100px;
+    vertical-align: top;
+    padding: 0;
+    text-align: center;
+}
+
+.form-login{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    background: #184c86;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: button;
+    color: #fff;
+}
+
+/*footer*/
+.footer{
+	z-index: 99;
+    padding: 40px 0 30px;
+    background: #111922;
+}
+.mod-seoLinks-item {
+    float: left;
+    margin-left: 20px;
+}
+.mod-seoLinks-item.item-1, .mod-seoLinks-item.item-2 {
+    width: 18%;
+}
+
+.mod-seoLinks-item .h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.mod-seoLinks-item p {
+    line-height: 2;
+}
+.mod-seoLinks-item p a {
+    font-size: 12px;
+    display: block;
+    color: #9aafc9;
+}
+.mod-seoLinks-item.item-3 p {
+    overflow: hidden;
+}
+.mod-seoLinks-item.item-3 a {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    vertical-align: middle;
+}
+.mod-seoLinks-item.item-4 {
+    float: right;
+    width: 30%;
+    margin-left: 0;
+}
+
+.blogroll {
+    color: #304255;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+.blogroll > .link {
+    color: #304255;
+    display: inline-block;
+    margin: 5px 10px 5px 5px;
+}
+.mod-copyright {
+    line-height: 1.8;
+    overflow: hidden;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+
+/*sidebar*/
+.sidebar{
+	position: fixed;
+	bottom: 87px;
+	right: 35px;
+	z-index: 10;
+}
+
+.sidBox{
+	display: block;
+	width: 70px;
+	height: 70px;
+}
+.home{
+	display: none;
+	cursor: pointer;
+	background: url(../img/stickIcon.png) no-repeat center;
+}
+.home:hover{
+	background: url(../img/stickIconFocus.png) no-repeat center;
+}
+.App{
+	cursor: pointer;
+	background: url(../img/appDownloadIcon.png) no-repeat center;
+}
+.App:hover{
+	background: url(../img/appDownloadIconFocus.png) no-repeat center;
+}
+.contactUs{
+	cursor: pointer;
+	background: url(../img/contactIcon.png) no-repeat center;
+}
+.contactUs:hover{
+	background: url(../img/contactIconFocus.png) no-repeat center;
+}
+.novice{
+	cursor: pointer;
+	background: url(../img/noviceIcon.png) no-repeat center;
+}
+.novice:hover{
+	background: url(../img/noviceIconFocus.png) no-repeat center;
+}
+.verification{
+	cursor: pointer;
+	background: url(../img/verifyIcon.png) no-repeat center;
+}
+.verification:hover{
+	background: url(../img/verifyIconFocus.png) no-repeat center;
+}
+
+.help{
+	cursor: pointer;
+	background: url(../img/mediaQQ.png) no-repeat center;
+}
+.help:hover{
+	background: url(../img/mediaQQFocus.png) no-repeat center;
+}
+
+
+
+/*滚动条*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-corner {
+    background: #f1f3f9;
+}
+::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background: #a2a2a2;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+    background: #f1f3f9;
+}
